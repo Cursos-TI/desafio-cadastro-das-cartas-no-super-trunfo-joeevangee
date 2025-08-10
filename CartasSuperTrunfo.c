@@ -11,8 +11,34 @@ int main() {
     printf("novo commit\n");
 
 
+    char Estado[50];
+    char Codigo[50];
+    char Nome_da_cidade[50];
+    int Populacao;
+    float Area;
+    float PIB;
+    int Numero_de_pontos_turisticos;
 
+    printf("Digite seu estado: \n");
+    scanf("%s", &Estado);
 
+    printf("Digite o codigo da carta: \n");
+    scanf("%s", &Codigo);
+
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", &Nome_da_cidade);
+
+    printf("Digite o numero de populacao: \n");
+    scanf("%d", &Populacao);
+
+    printf("Digite a area: \n");
+    scanf("%f", &Area);
+
+    printf("Digite o PIB: \n");
+    scanf("%f", &PIB);
+
+    printf("Digite quandos pontos turisticos: \n");
+    scanf("%d", &Numero_de_pontos_turisticos);
 
 
 
