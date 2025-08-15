@@ -6,6 +6,14 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
+#include <stdio.h>
+
+// Desafio Super Trunfo - Países
+// Tema 1 - Cadastro das Cartas
+// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
+// Siga os comentários para implementar cada parte do desafio.
+//Teste larissa
+
 int main() {
     printf("Desafio super trunfo paises! \n");
     printf("novo commit\n");
@@ -16,6 +24,8 @@ int main() {
     float Area1, PIB1;
     float Densidade_populacional1;
     float PIB_per_capita1;
+    float Densidade_populacional_invertida1;
+    float Super_poder1;
 
     //Declaracao de variavel para carta 2!
     char Estado2[30], Codigo2[10], Cidade2[30];
@@ -23,6 +33,8 @@ int main() {
     float Area2, PIB2;
     float Densidade_populacional2;
     float PIB_per_capita2;
+    float Densidade_populacional_invertida2;
+    float Super_poder2
 
     
     //Cadastro da primeira carta!
@@ -56,6 +68,13 @@ int main() {
     PIB_per_capita1 = PIB1 / Populacao1;
     printf("O PIB per capita é: %.2f milhões/hab \n", PIB_per_capita1);
 
+    //Densidade populacional invertida da carta 1
+    Densidade_populacional_invertida1 = Area1 / Populacao1;
+    printf("A densidade Populacional Invertida é: %.2f km²/hab \n", Densidade_populacional_invertida1);
+
+    //Declaração do super poder da carta 1
+    Super_poder1 = 
+
 
     
     //Cadastro da segunda carta!
@@ -88,6 +107,13 @@ int main() {
 
     PIB_per_capita2 = (PIB2 / Populacao2);
     printf("O PIB per capita é: %.2f milhões/hab \n", PIB_per_capita2);
+
+    //Densidade populacional invertida da carta 2
+    Densidade_populacional_invertida2 = Area2 / Populacao2;
+    printf("A densidade Populacional Invertida é: %.2f km²/hab \n", Densidade_populacional_invertida2);
+
+    //Declaração do super poder da carta 2
+    Super_poder2 = 
 
     
     
