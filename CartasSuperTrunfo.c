@@ -34,7 +34,7 @@ int main() {
     float Densidade_populacional2;
     float PIB_per_capita2;
     float Densidade_populacional_invertida2;
-    float Super_poder2
+    float Super_poder2;
 
     
     //Cadastro da primeira carta!
@@ -73,7 +73,8 @@ int main() {
     printf("A densidade Populacional Invertida é: %.2f km²/hab \n", Densidade_populacional_invertida1);
 
     //Declaração do super poder da carta 1
-    Super_poder1 = 
+    Super_poder1 = Populacao1 + Area1 + PIB1 + Pontos_turisticos1 + PIB_per_capita1 + Densidade_populacional_invertida1;
+    printf("O valor do Super poder é: %f Milhões \n", Super_poder1);
 
 
     
