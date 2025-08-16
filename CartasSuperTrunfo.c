@@ -24,7 +24,6 @@ int main() {
     float Area1, PIB1;
     float Densidade_populacional1;
     float PIB_per_capita1;
-    float Densidade_populacional_invertida1;
     float Super_poder1;
 
     //Declaracao de variavel para carta 2!
@@ -33,7 +32,6 @@ int main() {
     float Area2, PIB2;
     float Densidade_populacional2;
     float PIB_per_capita2;
-    float Densidade_populacional_invertida2;
     float Super_poder2;
 
     
@@ -68,13 +66,10 @@ int main() {
     PIB_per_capita1 = PIB1 / Populacao1;
     printf("O PIB per capita é: %.2f milhões/hab \n", PIB_per_capita1);
 
-    //Densidade populacional invertida da carta 1
-    Densidade_populacional_invertida1 = 1.0f / Densidade_populacional1;
-    printf("A densidade Populacional Invertida é: %.2f km²/hab \n", Densidade_populacional_invertida1);
 
     //Declaração do super poder da carta 1
-    Super_poder1 = (float)Populacao1 + Area1 + PIB1 + (float)Pontos_turisticos1 + PIB_per_capita1 + Densidade_populacional_invertida1;
-    printf("O valor do Super poder é: %f Milhões \n", Super_poder1);
+    Super_poder1 = (float)Populacao1 + Area1 + PIB1 + (float)Pontos_turisticos1 + PIB_per_capita1 + (1.f / Densidade_populacional1);
+    printf("O valor do seu Super poder é: %.4f Milhões \n", Super_poder1);
 
 
     
@@ -109,13 +104,10 @@ int main() {
     PIB_per_capita2 = (PIB2 / Populacao2);
     printf("O PIB per capita é: %.2f milhões/hab \n", PIB_per_capita2);
 
-    //Densidade populacional invertida da carta 2
-    Densidade_populacional_invertida2 = 0.f / Densidade_populacional2;
-    printf("A densidade Populacional Invertida é: %.2f km²/hab \n", Densidade_populacional_invertida2);
-
+ 
     //Declaração do super poder da carta 2
-    Super_poder1 = (float)Populacao2 + Area2 + PIB2 + (float)Pontos_turisticos2 + PIB_per_capita2 + Densidade_populacional_invertida2;
-    printf("O valor do Super poder é: %f Milhões \n", Super_poder2);
+    Super_poder2 = (float)Populacao2 + Area2 + PIB2 + (float)Pontos_turisticos2 + PIB_per_capita2 + (1.f / Densidade_populacional2);
+    printf("O valor do seu Super poder é: %.4f Milhões \n", Super_poder2);
 
     
     
@@ -130,6 +122,7 @@ int main() {
      printf("Pontos Turisticos: %d\n", Pontos_turisticos1);
      printf("Densidade Populacional: %.2f \n", Densidade_populacional1);
      printf("PIB per capita: %.2f \n", PIB_per_capita1);
+     printf("Super Poder: %.4f \n", Super_poder1);
      
      
      //Exibicoes das informacoes da Carta 2!
@@ -143,6 +136,20 @@ int main() {
      printf("Pontos Turisticos: %d \n", Pontos_turisticos2);
      printf("Densidade Populacional: %.2f \n", Densidade_populacional2);
      printf("PIB per capita: %.2f \n", PIB_per_capita2);
+     printf("Super Poder: %.4f \n", Super_poder2);
+
+     printf("Carta maior 1 Carta menor 0 \n");
+     //Exibição da carta vencedora
+     printf("A População da carta 1 é maior ?: %d\n", Populacao1 > Populacao2);
+     printf("A Area da carta 1 é maior ?: %d\n", Area1 > Area2);
+     printf("O PIB da carta 1 é maior ?: %d\n", PIB1 > PIB2);
+     printf("Os Pontos Turisticos da carta 1 é maior ?: %d\n", Pontos_turisticos1 > Pontos_turisticos2);
+     printf("A Densidade Populacional da carta 1 é maior ?: %d\n", Densidade_populacional1 > Densidade_populacional2);
+     printf("O PIB per capita da carta 1 é maior ?: %d\n", PIB_per_capita1 > PIB_per_capita2);
+     printf("O Super Poder da carta 1  é maior ?: %d\n", Super_poder1 > Super_poder2);
+
+
+     
 
 
 
