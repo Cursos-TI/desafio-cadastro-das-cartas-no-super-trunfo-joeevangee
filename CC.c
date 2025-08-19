@@ -52,10 +52,10 @@ int main() {
     scanf("%d", &Pontos_turisticos1);
 
     //Densidade populacional e PIB per capita carta 1
-    Densidade_populacional1 = Populacao1 / Area1;
+    Densidade_populacional1 = (float)Populacao1 / Area1;
     printf("A densidade Populacional é: %.2f hab. km² \n", Densidade_populacional1);
 
-    PIB_per_capita1 = PIB1 / Populacao1;
+    PIB_per_capita1 = PIB1 / (float)Populacao1;
     printf("O PIB per capita é: %.2f milhões/hab \n", PIB_per_capita1);
 
 
@@ -147,10 +147,10 @@ int main() {
    
      
      if (Populacao1 > Populacao2){
-        printf("População 1 é maior com %d hab.\n", &Populacao1);
+        printf("População 1 é maior com %d hab.\n", Populacao1);
      } else {
-        printf("População 2 é maior com %d hab.\n", &Populacao2);
-     }
+        printf("População 2 é maior com %d hab.\n", Populacao2);
+     }  
 
      if (Area1 > Area2){
       printf("Area 1 é maior com %.2f KM.\n", Area1);
@@ -162,7 +162,7 @@ int main() {
       printf("PIB 1 é maior com %.2f Mi hab.\n", PIB1);
      } else {
       printf("PIB 2 é maior com %.2f mi hab.\n", PIB2);
-     }
+     } 
 
      if (PIB_per_capita1 > PIB_per_capita2){
       printf("PIB per capita 1 é maior com %.2f milhoes. \n", PIB_per_capita1);
@@ -177,7 +177,7 @@ int main() {
      }
 
 
-    printf(" ---- O Super Poder Vale 2 Pontos pro jogador com a carta Mais forte ---- ")
+    printf(" ---- O Super Poder Vale 2 Pontos pro jogador com a carta Mais forte ---- ");
      if (Super_poder1 > Super_poder2){
       printf("O super poder 1 é maior %.3f\n", Super_poder1);
      } else {
