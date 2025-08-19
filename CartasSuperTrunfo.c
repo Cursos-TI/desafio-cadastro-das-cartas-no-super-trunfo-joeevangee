@@ -144,45 +144,56 @@ int main() {
      //Comparação dos atributos das cartas 1 e 2!
 
      printf(" ---- A Disputa Final! ---- \n");
-   
+     printf(" --- Quem sera o Vencedor ? --- \n");
      
-     if (Populacao1 > Populacao2){
-        printf("População 1 é maior com %d hab.\n", Populacao1);
-     } else {
-        printf("População 2 é maior com %d hab.\n", Populacao2);
-     }  
+     // População
+    printf("Comparacao de Populacao: ");
+    if (Populacao1 > Populacao2){
+        printf("Carta 1 (%s) venceu com %d populacao!\n", Cidade1, Populacao1);
+    } else {
+        printf("Carta 2 (%s) venceu com %d populacao!\n", Cidade2, Populacao2);
+    }  
 
-     if (Area1 > Area2){
-      printf("Area 1 é maior com %.2f KM.\n", Area1);
-     } else {
-      printf("Area 1 é maior com %.2f KM.\n", Area2);
-     }
+     // Área
+    printf("Comparacao de Area: ");
+    if (Area1 > Area2){
+        printf("Carta 1 (%s) venceu com %.2f KM.\n", Cidade1, Area1);
+    } else {
+        printf("Carta 2 (%s) venceu com %.2f KM.\n", Cidade2, Area2);
+    }
 
-     if (PIB1 > PIB2){
-      printf("PIB 1 é maior com %.2f Mi hab.\n", PIB1);
-     } else {
-      printf("PIB 2 é maior com %.2f mi hab.\n", PIB2);
-     } 
+     // PIB
+    printf("Comparacao de PIB: ");
+    if (PIB1 > PIB2){
+        printf("Carta 1 (%s) venceu com %.2f mi hab.\n", Cidade1, PIB1);
+    } else {
+        printf("Carta 2 (%s) venceu com %.2f mi hab.\n", Cidade2, PIB2);
+    }
 
-     if (PIB_per_capita1 > PIB_per_capita2){
-      printf("PIB per capita 1 é maior com %.2f milhoes. \n", PIB_per_capita1);
-     } else {
-      printf("PIB per capita 2 é maior com %.2f milhoes. \n", PIB_per_capita2);
-     }
+     // PIB per capita
+    printf("Comparacao de PIB per capita: ");
+    if (PIB_per_capita1 > PIB_per_capita2){
+        printf("Carta 1 (%s) venceu com %.2f milhoes. \n", Cidade1, PIB_per_capita1);
+    } else {
+        printf("Carta 2 (%s) venceu com %.2f milhoes. \n", Cidade2, PIB_per_capita2);
+    }
 
-     if (Densidade_populacional1 < Densidade_populacional2){
-      printf("Densidade populacional 1 é menor %.2f hab/km². \n", Densidade_populacional1);
-     } else {
-      printf("Densidade populacional 2 é menor %.2f hab/km². \n", Densidade_populacional2);
-     }
+     // Densidade populacional (menor é melhor)
+    printf("Comparacao de Densidade populacional (menor vence): ");
+    if (Densidade_populacional1 < Densidade_populacional2){
+        printf("Carta 1 (%s) venceu com %.2f hab/km². \n", Cidade1, Densidade_populacional1);
+    } else {
+        printf("Carta 2 (%s) venceu com %.2f hab/km². \n", Cidade2, Densidade_populacional2);
+    }
 
 
-    printf(" ---- O Super Poder Vale 2 Pontos pro jogador com a carta Mais forte ---- ");
-     if (Super_poder1 > Super_poder2){
-      printf("O super poder 1 é maior %.3f\n", Super_poder1);
-     } else {
-      printf("O Super poder 2 é maior %.3f\n", Super_poder2);
-     }
+    // Super Poder
+    printf("Comparacao de Super Poder: ");
+    if (Super_poder1 > Super_poder2){
+        printf("Carta 1 (%s) venceu com %.3f.\n", Cidade1, Super_poder1);
+    } else {
+        printf("Carta 2 (%s) venceu com %.3f.\n", Cidade2, Super_poder2);
+    }
 
 
 
