@@ -1,20 +1,12 @@
 #include <stdio.h>
-
+    
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
-#include <stdio.h>
-
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
-int main() {
+    int main()
     printf("Desafio super trunfo paises! \n");
     printf("novo commit\n");
 
@@ -138,7 +130,7 @@ int main() {
      printf("PIB per capita: %.2f \n", PIB_per_capita2);
      printf("Super Poder: %.4f \n", Super_poder2);
 
-     printf("Carta maior 1 Carta menor 0 \n");
+     printf("Carta maior 1, Carta menor 0 \n");
      //Exibição da carta vencedora
      printf("A População da carta 1 é maior ?: %d\n", Populacao1 > Populacao2);
      printf("A Area da carta 1 é maior ?: %d\n", Area1 > Area2);
@@ -147,6 +139,9 @@ int main() {
      printf("A Densidade Populacional da carta 1 é maior ?: %d\n", Densidade_populacional1 > Densidade_populacional2);
      printf("O PIB per capita da carta 1 é maior ?: %d\n", PIB_per_capita1 > PIB_per_capita2);
      printf("O Super Poder da carta 1  é maior ?: %d\n", Super_poder1 > Super_poder2);
+
+
+    
 
 
      
@@ -167,4 +162,30 @@ int main() {
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
     return 0;
-}
+}                                                                                                                                                                                                                                                      printf("A Area da carta 1 é maior ?: %d\n", Area1 > Area2);
+                                                                                                                                                                                                                                                                                                                                                                                                                                           printf("O PIB da carta 1 é maior ?: %d\n", PIB1 > PIB2);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                printf("Os Pontos Turisticos da carta 1 é maior ?: %d\n", Pontos_turisticos1 > Pontos_turisticos2);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                     printf("A Densidade Populacional da carta 1 é maior ?: %d\n", Densidade_populacional1 > Densidade_populacional2);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                          printf("O PIB per capita da carta 1 é maior ?: %d\n", PIB_per_capita1 > PIB_per_capita2);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                               printf("O Super Poder da carta 1  é maior ?: %d\n", Super_poder1 > Super_poder2);
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            // Sugestão: Defina variáveis separadas para cada atributo da cidade.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        // Cadastro das Cartas:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        // Exibição dos Dados das Cartas:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    return 0;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
