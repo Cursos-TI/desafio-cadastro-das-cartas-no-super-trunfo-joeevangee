@@ -130,8 +130,9 @@ int main() {
      printf("PIB per capita: %.2f \n", PIB_per_capita2);
      printf("Super Poder: %.4f \n", Super_poder2);
 
+     //Exibição da carta Maior
      printf("Carta maior 1 Carta menor 0 \n");
-     //Exibição da carta vencedora
+     printf(" --- Qual carta vai vencer? --- ");
      printf("A População da carta 1 é maior ?: %d\n", Populacao1 > Populacao2);
      printf("A Area da carta 1 é maior ?: %d\n", Area1 > Area2);
      printf("O PIB da carta 1 é maior ?: %d\n", PIB1 > PIB2);
@@ -139,6 +140,55 @@ int main() {
      printf("A Densidade Populacional da carta 1 é maior ?: %d\n", Densidade_populacional1 > Densidade_populacional2);
      printf("O PIB per capita da carta 1 é maior ?: %d\n", PIB_per_capita1 > PIB_per_capita2);
      printf("O Super Poder da carta 1  é maior ?: %d\n", Super_poder1 > Super_poder2);
+
+     //Comparação dos atributos das cartas 1 e 2!
+
+     printf(" ---- A Disputa Final! ---- \n");
+   
+     
+     if (Populacao1 > Populacao2){
+        printf("População 1 é maior com %d hab.\n", &Populacao1);
+     } else {
+        printf("População 2 é maior com %d hab.\n", &Populacao2);
+     }
+
+     if (Area1 > Area2){
+      printf("Area 1 é maior com %.2f KM.\n", Area1);
+     } else {
+      printf("Area 1 é maior com %.2f KM.\n", Area2);
+     }
+
+     if (PIB1 > PIB2){
+      printf("PIB 1 é maior com %.2f Mi hab.\n", PIB1);
+     } else {
+      printf("PIB 2 é maior com %.2f mi hab.\n", PIB2);
+     }
+
+     if (PIB_per_capita1 > PIB_per_capita2){
+      printf("PIB per capita 1 é maior com %.2f milhoes. \n", PIB_per_capita1);
+     } else {
+      printf("PIB per capita 2 é maior com %.2f milhoes. \n", PIB_per_capita2);
+     }
+
+     if (Densidade_populacional1 < Densidade_populacional2){
+      printf("Densidade populacional 1 é menor %.2f hab/km². \n", Densidade_populacional1);
+     } else {
+      printf("Densidade populacional 2 é menor %.2f hab/km². \n", Densidade_populacional2);
+     }
+
+
+    printf(" ---- O Super Poder Vale 2 Pontos pro jogador com a carta Mais forte ---- ")
+     if (Super_poder1 > Super_poder2){
+      printf("O super poder 1 é maior %.3f\n", Super_poder1);
+     } else {
+      printf("O Super poder 2 é maior %.3f\n", Super_poder2);
+     }
+
+
+
+
+     
+      
 
 
      
